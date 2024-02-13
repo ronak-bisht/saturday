@@ -1,6 +1,6 @@
 const  navdata={
     d1:{
-        headig:"HR SERVICES",
+        heading:"HR SERVICES",
         data:[
             {
                 heading:"Expand",
@@ -68,10 +68,10 @@ const  navdata={
         ]
     },
     d2:{
-        headig:"HR SERVICES",
+        heading:"VISA SERVICES",
         data:[
             {
-                heading:"Expand",
+                heading:"VISA",
                 data:[
                     {
                         head:"EOR",
@@ -91,27 +91,7 @@ const  navdata={
                     },
                 ]
             },
-            {
-                heading:"OutSource",
-                data:[
-                    {
-                        head:"EOR",
-                        para:"Expand Without Entity",
-                    },
-                    {
-                        head:"PEO",
-                        para:"sAVE Time & Visa Quota",
-                    },
-                    {
-                        head:"Employee Relocation",
-                        para:"Relocate Your Employees",
-                    },
-                    {
-                        head:"Employee Mobility",
-                        para:"Visa & Work Permit",
-                    },
-                ]
-            },
+            
             {
                 heading:"Hire",
                 data:[
@@ -136,10 +116,10 @@ const  navdata={
         ]
     },
      d3:{
-        headig:"HR SERVICES",
+        heading:"RESOURCES",
         data:[
             {
-                heading:"Expand",
+                heading:"TEMPERORIU",
                 data:[
                     {
                         head:"EOR",
@@ -204,7 +184,7 @@ const  navdata={
         ]
     },
     d4:{
-        headig:"HR SERVICES",
+        heading:"HR SERVICES",
         data:[
             {
                 heading:"Expand",

@@ -5,8 +5,8 @@ import Model from '../Models/Models'
 import navdata from './Navdata'
 export default function Navbar(){
     const [data,setData]=useState("data1")
-    
-   
+    const [show,setShow]=useState(false)
+    console.log(show)
     return(
         <>
             <nav className='navbar container py-fourth'>
@@ -16,19 +16,20 @@ export default function Navbar(){
                 <div>
                     <ul className='nav-links'>
 
-                        <li className='fs-nav' onClick={()=>setData(d1)}>Home</li>
-                        <li className='fs-nav' onClick={()=>setData(d2)}>HR Services</li>
-                        <li className='fs-nav' onClick={()=>setData(d3)}>Visa Services</li>
-                        <li className='fs-nav'>Resources</li>
-                        <li className='fs-nav'>Why Connect</li>
+                        <li className='fs-nav' >Home</li>
+                        <li className='fs-nav' onMouseEnter={()=>{setData(navdata.d1); setShow(true);}} onMouseDown={()=>{setData(""); setShow(false)}}>HR Services</li>
+                        <li className='fs-nav' onMouseEnter={()=>setData(navdata.d2)}>Visa Services</li>
+                        <li className='fs-nav' onMouseEnter={()=>setData(navdata.d3)}>Resources</li>
+                        <li className='fs-nav'onMouseEnter={()=>setData(navdata.d4)}>Why Connect</li>
                         <li className='fs-nav'>Countries</li>
                         <li><Button class="btn btn-red" text="Contact us" temp=""/></li>
                         
                     
                     </ul>
                 </div>
-                <Model data={data}/>
+                
             </nav>
+          {show &&  <Model data={data}/>}
         </>
     )
 }
