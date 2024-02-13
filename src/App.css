@@ -1,0 +1,17 @@
+
+.navbar{
+    display: flex;
+
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links li{
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    width: 800px;
+    align-items: center;
+    justify-content: space-between;
+}
